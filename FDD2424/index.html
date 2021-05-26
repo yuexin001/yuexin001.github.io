@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Audio samples for Voice Conversion with Generative ADVERSARIAL NETWORKS</title>
+
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Voice Conversion with Generative ADVERSARIAL NETWORKS</h1>
+      </header>
+    </article>
+
+    <div><b>Authors:</b> Yuexin Cao, Xiaochen Zhang</div>
+    <div><b>Abstract:</b> In this project, we replicate two Voice Conversion (VC) methods with Generative Adversarial Networks (GANs): CycleGAN-VC and StarGAN-VC. CycleGAN-VC is designed for one-to-one conversion, which means there is only one source speaker and one target speaker. StarGAN-VC can achieve many-to-many conversion with a domain classifier and there are more than one speaker in both of source and target datesets. Generative Adversarial Network is the core idea of these two methods and has been proved to be effective in the generative models. Subjective evaluation experiments are conducted and the results show that both of two networks can produce good audio in terms of voice quality and speaker similarity. We focus on the speaker voice conversion (VC) in this project. And experiments on Emotion Voice Conversion (EVC) is also conducted. Both of these two methods can also convert emotion of the speech but the results are limited.</div>
+	
+	<br/>
+	<br/>
+	
+	<div><b>Speaker Voice Conversion:</b> Experiments are conducted on four speakers, two male and two female</div>
+	
+	<div>
+      <h3>Female --> Male</h3>
+      <table>
+	    <tr><td class="transcript">Source Speaker</td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">Target Speaker</td><td class="transcript">
+		<tr><td><audio controls><source src="input_target/SF1/100001.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="input_target/TM1/100001.wav"></audio></td><td class="transcript">
+		
+        <tr><td class="transcript">Input speeches</td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">CycleGAN-VC </td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">StarGAN-VC</td><td class="transcript">
+        <tr><td><audio controls><source src="FM/input/200003.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="FM/cyclegan/SF1_TM1_200003.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="FM/stargan/SF1_TM1_200003.wav"></audio></td><td class="transcript">
+					
+        <tr><td><audio controls><source src="FM/input/200005.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="FM/cyclegan/SF1_TM1_200005.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="FM/stargan/SF1_TM1_200005.wav"></audio></td><td class="transcript">
+		
+		<tr><td><audio controls><source src="FM/input/200006.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="FM/cyclegan/SF1_TM1_200006.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="FM/stargan/SF1_TM1_200006.wav"></audio></td><td class="transcript">
+
+      </table>
+    </div>
+	
+	
+	<div>
+      <h3>Female --> Female</h3>
+      <table>
+	    <tr><td class="transcript">Source Speaker</td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">Target Speaker</td><td class="transcript">
+		<tr><td><audio controls><source src="input_target/SF1/100001.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="input_target/TF1/100001.wav"></audio></td><td class="transcript">
+		
+        <tr><td class="transcript">Input speeches</td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">CycleGAN-VC </td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">StarGAN-VC</td><td class="transcript">
+        <tr><td><audio controls><source src="FF/input/200008.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="FF/cyclegan/SF1_TF1_200008.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="FF/stargan/SF1_TF1_200008.wav"></audio></td><td class="transcript">
+					
+        <tr><td><audio controls><source src="FF/input/200009.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="FF/cyclegan/SF1_TF1_200009.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="FF/stargan/SF1_TF1_200009.wav"></audio></td><td class="transcript">
+		
+		<tr><td><audio controls><source src="FF/input/200010.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="FF/cyclegan/SF1_TF1_200010.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="FF/stargan/SF1_TF1_200010.wav"></audio></td><td class="transcript">
+
+      </table>
+    </div>
+	
+	<div>
+      <h3>Male --> Female</h3>
+      <table>
+	    <tr><td class="transcript">Source Speaker</td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">Target Speaker</td><td class="transcript">
+		<tr><td><audio controls><source src="input_target/SM1/100001.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="input_target/TF1/100001.wav"></audio></td><td class="transcript">
+		
+        <tr><td class="transcript">Input speeches</td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">CycleGAN-VC </td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">StarGAN-VC</td><td class="transcript">
+        <tr><td><audio controls><source src="MF/input/200001.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="MF/cyclegan/SM1_TF1_200001.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="MF/stargan/SM1_TF1_200001.wav"></audio></td><td class="transcript">
+					
+        <tr><td><audio controls><source src="MF/input/200002.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="MF/cyclegan/SM1_TF1_200002.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="MF/stargan/SM1_TF1_200002.wav"></audio></td><td class="transcript">
+		
+		<tr><td><audio controls><source src="MF/input/200003.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="MF/cyclegan/SM1_TF1_200003.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="MF/stargan/SM1_TF1_200003.wav"></audio></td><td class="transcript">
+
+      </table>
+    </div>
+	
+
+	<div>
+      <h3>Male --> Male</h3>
+      <table>
+	    <tr><td class="transcript">Source Speaker</td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">Target Speaker</td><td class="transcript">
+		<tr><td><audio controls><source src="input_target/SM1/100001.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="input_target/TM1/100001.wav"></audio></td><td class="transcript">
+		
+       <tr><td class="transcript">Input speeches</td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">CycleGAN-VC </td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">StarGAN-VC</td><td class="transcript">
+       <tr><td><audio controls><source src="MM/input/200005.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="MM/cyclegan/SM1_TM1_200005.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+	</td><td><audio controls><source src="MM/stargan/SM1_TM1_200005.wav"></audio></td><td class="transcript">
+					
+        <tr><td><audio controls><source src="MM/input/200006.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="MM/cyclegan/SM1_TM1_200006.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="MM/stargan/SM1_TM1_200006.wav"></audio></td><td class="transcript">
+		
+		<tr><td><audio controls><source src="MM/input/200008.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="MM/cyclegan/SM1_TM1_200008.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="MM/stargan/SM1_TM1_200008.wav"></audio></td><td class="transcript">
+
+      </table>
+    </div>
+	
+	
+	
+	
+	
+	<br/>
+	<br/>
+	
+	<div><b>Emotion Voice Conversion:</b> Angry and Neutral are investigated in this project.</div>
+	
+	<div>
+      <h3>Neutral --> Angry</h3>
+      <table>
+        <tr><td class="transcript">Input speeches</td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">CycleGAN-VC </td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">StarGAN-VC</td><td class="transcript">
+        <tr><td><audio controls><source src="samples/2ang/GT/01.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="samples/2ang/OM/01.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="samples/2ang/BS/01.wav"></audio></td><td class="transcript">
+					
+        <tr><td><audio controls><source src="samples/2ang/GT/04.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="samples/2ang/OM/04.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="samples/2ang/BS/04.wav"></audio></td><td class="transcript">
+
+      </table>
+    </div>
+	
+	<br/>
+	
+	<div>
+      <h3>Angry --> Neutral</h3>
+      <table>
+        <tr><td class="transcript">Input speeches</td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">CycleGAN-VC </td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="transcript">StarGAN-VC</td><td class="transcript">
+        <tr><td><audio controls><source src="samples/2neu/GT/01.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="samples/2neu/OM/01.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="samples/2neu/BS/01.wav"></audio></td><td class="transcript">
+		
+        <tr><td><audio controls><source src="samples/2neu/GT/02.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;</td><td><audio controls><source src="samples/2neu/OM/02.wav"></audio></td><td class="transcript">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td><td><audio controls><source src="samples/2neu/BS/02.wav"></audio></td><td class="transcript">
+      </table>
+    </div>
+
+
+	
+	
+
